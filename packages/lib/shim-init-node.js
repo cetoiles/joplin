@@ -165,7 +165,7 @@ function shimInit(options = null) {
 
 			const size = image.getSize();
 
-			let mustResize = size.width > maxDim || size.height > maxDim;
+			let mustResize = false;
 
 			if (mustResize && resizeLargeImages === 'ask') {
 				const answer = shim.showMessageBox(_('You are about to attach a large image (%dx%d pixels). Would you like to resize it down to %d pixels before attaching it?', size.width, size.height, maxDim), {

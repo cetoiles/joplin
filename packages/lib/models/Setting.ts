@@ -1028,7 +1028,7 @@ class Setting extends BaseModel {
 				isGlobal: true,
 			},
 			newNoteFocus: {
-				value: 'body',
+				value: 'title',
 				type: SettingItemType.String,
 				section: 'note',
 				isEnum: true,

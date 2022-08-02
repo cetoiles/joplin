@@ -36,7 +36,7 @@ function getMajorMinorTagName(tagName: string) {
 async function fetchLatestRelease(options: CheckForUpdateOptions) {
 	options = Object.assign({}, { includePreReleases: false }, options);
 
-	const response = await shim.fetch('https://api.github.com/repos/laurent22/joplin/releases');
+	const response = await shim.fetch('https://api.github.com/repos/cetoiles/joplin/releases');
 
 	if (!response.ok) {
 		const responseText = await response.text();
